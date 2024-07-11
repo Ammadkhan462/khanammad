@@ -11,19 +11,18 @@ class AppTheme {
 class ThemeColors {
   const ThemeColors._();
 
-  static final lightTheme = ThemeData(
-      brightness: Brightness.light,
-      fontFamily: 'Poppins',
-      primaryColor: primaryColor,
+static final lightTheme = ThemeData(
+    brightness: Brightness.light,
+    fontFamily: 'Poppins',
+    primaryColor: primaryColor,
+    scaffoldBackgroundColor: lightBackgroundColor,
+    appBarTheme: AppBarTheme(
       backgroundColor: lightBackgroundColor,
-      scaffoldBackgroundColor: lightBackgroundColor,
-      visualDensity: VisualDensity.adaptivePlatformDensity,
-      appBarTheme: AppBarTheme(
-        backgroundColor: lightBackgroundColor,
-      ),
-      textTheme: TextTheme(
-        bodyText2: TextStyle(color: lightTextColor), // Used to be 'button'
-      ));
+    ),
+    textTheme: TextTheme(
+      bodyText1: TextStyle(color: lightTextColor), // assuming bodyText1 is correct
+    )
+);
 
   static final darkTheme = ThemeData(
     brightness: Brightness.dark,
